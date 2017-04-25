@@ -1,0 +1,15 @@
+<h1>Class Variable</h1>
+<hr>
+<h3>Places you've been:</h3>
+<ul>
+  <% @places.each() do |place| %>
+    <li><%= place.name() %></li>
+  <% end %>
+</ul>
+<form action="/places" method="post">
+  <div class="form-group">
+     <label for="name">Enter places you've been:</label>
+     <input id="name" name="name" class="form-control" type="text">
+  </div>
+  <button type="submit" class="btn-success">Submit</button>
+</form>
